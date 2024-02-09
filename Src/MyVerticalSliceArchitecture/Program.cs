@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MyVerticalSliceArchitecture.Data;
 using MyVerticalSliceArchitecture.ExceptionHandler;
-using MyVerticalSliceArchitecture.Extensions;
 using MyVerticalSliceArchitecture.Features.FriendShip;
 using System.Reflection;
 
@@ -34,8 +33,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-//app.UseCustomExceptionHandler();
-app.UseMiddleware<CustomExceptionHandlerMiddleware>();
+app.UseCustomExceptionHandler();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

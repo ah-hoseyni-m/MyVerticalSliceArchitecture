@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Extensions\" />
     <Folder Include="Features\Mention\" />
     <Folder Include="Features\Intresting\" />
   </ItemGroup>
