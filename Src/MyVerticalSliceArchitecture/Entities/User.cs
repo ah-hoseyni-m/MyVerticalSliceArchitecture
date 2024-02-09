@@ -7,8 +7,8 @@ public class User : BaseEntity<Int64>
     public string UserPhone { get; set; }
     public string UserPassword { get; set; }
     public string UserEmailConfirmed { get; set; }
-    public ICollection<UserRelations> UserRelations { get; set; }
-    //public ICollection<UserRelations> UserRelationsFollow { get; set; }
+    public virtual ICollection<UserRelations> UserRelations { get; set; }
+    public virtual ICollection<UserRelations> UserRelations2 { get; set; }
 
 
 
